@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web ví dụ</title>
+</head>
+<body>
+
+    <script>
+        // Đây chính là đoạn mã JavaScript của bạn
+        const article = {
+            title: 'Xuat template',
+            body: 'Su dung template de xuat truc tiep len trang web'
+        };
+
+        // Lệnh này sẽ lấy nội dung HTML được tạo ra
+        // và GHI ĐÈ toàn bộ nội dung của thẻ <body>
+        document.body.innerHTML = `
+        <section>
+            <header>
+                <h1>Hoc React</h1>
+            </header>
+            <article>
+                <h2>${article.title}</h2>
+                ${article.body}
+            </article>
+            <footer>
+                <p>copyright ${new Date().getFullYear()} | Hoc React</p>
+            </footer>
+        </section>
+        `;
+    </script>
+
+</body>
+</html>

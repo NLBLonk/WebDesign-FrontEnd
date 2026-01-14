@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const str = '     Nguyen Thi Van Teo     ';
+            document.write('Chuỗi ban đầu: "' + str + '"<br>');
+
+            // bỏ khoảng trắng dư ở đầu và đuôi
+            const temp = str.trim();
+            // tìm khoảng trắng đầu tiên
+            const firstSpace = temp.indexOf(' ');
+            // tim khoảng trắng sau cùng
+            const lastSpace = temp.lastIndexOf(' ');
+        
+            const ho = temp.slice(0, firstSpace);
+            const tenLot = temp.slice(firstSpace + 1, lastSpace);
+            const ten = temp.slice(lastSpace + 1, temp.length + 1);
+            document.write('Họ: "' + ho + '"<br>');
+            document.write('Tên lót: "' + tenLot + '"<br>');
+            document.write('Tên: "' + ten + '"<br>');
+            document.write(`Họ và tên: "${ho} ${tenLot} ${ten}"<br>`);
+
+            //console.log(ho, tenLot, ten);
+    </script>
+</body>
+</html>

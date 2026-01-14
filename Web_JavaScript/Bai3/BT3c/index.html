@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const email = 'teonv@gmail.com';
+        document.write('Email ban dau: ' + email + '<br>');
+
+
+        let avg = 0, splitted = '', part1 = '', part2 = '';
+        splitted = email.split("@");
+        part1 = splitted[0];
+        avg = part1.length / 2;
+        part1 = part1.slice(0, (part1.length - avg));
+        part2 = splitted[1];
+        document.write('Email sau khi che: ' + part1 + "...@" + part2);
+
+        //console.log(part1 + "...@" + part2);
+    </script>
+</body>
+</html>
